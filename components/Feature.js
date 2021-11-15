@@ -1,9 +1,10 @@
-const Feature = ({blok}) => {
-  return (
-    <div className="text-center">
-      <h2 className="text-xl font-medium">{blok.name}</h2>
-    </div>
-  )
-}
-
-export default Feature
+import React from "react";
+import { sbEditable } from "@storyblok/storyblok-editable";
+ 
+const Feature = ({ blok }) => (
+  <div className="column feature" {...sbEditable(blok)}>
+    {blok.name}
+  </div>
+);
+ 
+export default Feature;

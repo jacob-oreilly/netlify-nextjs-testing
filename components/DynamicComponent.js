@@ -1,6 +1,7 @@
 import Teaser from "./Teaser";
 import Feature from "./Feature";
 import Grid from "./Grid";
+import Page from "./Page";
 import FeaturedArticles from "./FeaturedArticles";
 import Placeholder from "./Placeholder";
 
@@ -9,7 +10,7 @@ const Components = {
   teaser: Teaser,
   grid: Grid,
   feature: Feature,
-  "featured-articles": FeaturedArticles,
+  page: Page
 };
 
 const DynamicComponent = ({ blok }) => {

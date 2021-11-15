@@ -1,9 +1,8 @@
-const Teaser = ({blok}) => {
-  return (
-    <div className="py-10">
-      <h2 className="font-serif text-3xl text-center">{blok.headline}</h2>
-    </div>
-  )
-}
-
-export default Teaser
+import React from "react";
+import { sbEditable } from "@storyblok/storyblok-editable";
+ 
+const Teaser = ({ blok }) => {
+  return <h2 {...sbEditable(blok)}>{blok.headline}</h2>;
+};
+ 
+export default Teaser;
