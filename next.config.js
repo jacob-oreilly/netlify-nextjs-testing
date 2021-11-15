@@ -6,5 +6,6 @@ module.exports = {
   experimental: {
     externalDir: true,
   },
+  target: "experimental-serverless-trace",
 }
 
